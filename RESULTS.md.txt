@@ -1,0 +1,44 @@
+# Results and Analysis
+
+## Selected Features
+
+### Recursive Feature Elimination (RFE)
+Selected Features:
+- `country`
+- `code`
+- `recovered`
+- `critical`
+- `deaths`
+
+### Correlation-based Feature Selection (CFS)
+Selected Features:
+- `country`
+- `code`
+- `recovered`
+- `critical`
+- `deaths`
+
+## Classification Performance
+
+### Performance Metrics
+| Model              | Before Feature Selection | After RFE | After CFS |
+|--------------------|---------------------------|-----------|-----------|
+| Logistic Regression | 0.911111                  | 0.911111  | 0.911111  |
+| Random Forest      | 1.000000                  | 1.000000  | 1.000000  |
+
+### Visualizations
+
+1. **Feature Importance After RFE**
+   ![Feature Importance After RFE](images/feature_importance_rfe.png)
+
+2. **Feature Importance After CFS**
+   ![Feature Importance After CFS](images/feature_importance_cfs.png)
+
+3. **Correlation Heatmap**
+   ![Correlation Heatmap](images/correlation_heatmap.png)
+
+4. **Pair Plot**
+   ![Pair Plot](images/pair_plot.png)
+
+5. **Comparison of Classification Performance**
+   ![Comparison of Classification Performance](images/comparison_performance.png)
